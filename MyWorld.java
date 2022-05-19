@@ -18,6 +18,7 @@ public class MyWorld extends World
         super(600, 400, 1); 
         mankie drip = new mankie();
         addObject(drip, getWidth() / 2, getHeight() /2);
+        fruit blubbery
 
     }
 }

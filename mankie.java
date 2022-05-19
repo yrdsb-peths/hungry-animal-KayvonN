@@ -8,13 +8,29 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class mankie extends Actor
 {
-    /**
-     * Act - do whatever the monkey wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    String name;
+    {
+        this.name = name;
+    }
     public void act() 
     {
-        move(1);
-        // Add your action code here.
+        
+        if (Greenfoot.isKeyDown("a"))
+        {
+            turn(-4);
+        }
+        if (Greenfoot.isKeyDown("d"))
+        {
+            turn(4);
+        }
+        if (Greenfoot.isKeyDown("w"))
+        {
+            move(4);
+        }
+        if (Greenfoot.isKeyDown("s"))
+        {
+            move(-4);
+        }
     }    
+    
 }
