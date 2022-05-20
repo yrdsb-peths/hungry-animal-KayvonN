@@ -31,6 +31,14 @@ public class mankie extends Actor
         {
             move(-4);
         }
+        if(isTouching(Berry.class))
+        {
+            removeTouching(Berry.class);
+             Greenfoot.playSound("sounds/bearGrowl.mp3");
+            MyWorld world = (MyWorld) getWorld();
+            world.spawnBerry();
+            
+        }
     }    
     
 }
