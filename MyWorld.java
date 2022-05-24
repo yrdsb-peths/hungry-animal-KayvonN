@@ -18,6 +18,9 @@ public class MyWorld extends World
         super(600, 400, 1); 
         mankie drip = new mankie();
         addObject(drip, getWidth() / 2, getHeight() /2);
+        
+        Label scoreLabel = new Label(0, 80);
+        addObject(scoreLabel, 40, 40);
     
         Berry blubbery = new Berry();
         addObject(blubbery, 300, 0);

@@ -18,4 +18,5 @@ public class Berry extends Actor
         int y = getY();
         setLocation( x,y+2);// Add your action code here.
     }    
+        
 }
