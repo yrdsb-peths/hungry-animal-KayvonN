@@ -37,6 +37,7 @@ public class mankie extends Actor
              Greenfoot.playSound("sounds/bearGrowl.mp3");
             MyWorld world = (MyWorld) getWorld();
             world.spawnBerry();
+            world.increaseScore();
             
         }
     }    
