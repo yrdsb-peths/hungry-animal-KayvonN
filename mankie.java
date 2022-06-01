@@ -12,18 +12,18 @@ public class mankie extends Actor
     
     public mankie()
     {
-        for(int i = 1; i < 6; i++)
+        for(int i = 0; i < 5; i++)
         {
-            idle[i] = new GreenfootImage("Mankie_idle.gif/idle" + i + ".png");
+            idle[i] = new GreenfootImage("images/Mankie_idle/idle" + i + ".png" + ".png");
         }
         setImage(idle[0]);
     }
     
-    int imageIndex = 0;
+    int imageIndex = 1;
     public void animateMankie()
     {
         setImage(idle[imageIndex]);
-        imageIndex = imageIndex + 1 % idle.length;
+        imageIndex = (imageIndex + 1) % idle.length;
     }
     
     
@@ -45,11 +45,11 @@ public class mankie extends Actor
         }
         if (Greenfoot.isKeyDown("w"))
         {
-            move(4);
+            move(-4);
         }
         if (Greenfoot.isKeyDown("s"))
         {
-            move(-4);
+            move(4);
         }
         if(isTouching(Berry.class))
         {
